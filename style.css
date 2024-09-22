@@ -1,0 +1,142 @@
+body {
+    background-image: url(./img/IMG_4766.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo h1 {
+    white-space: nowrap;
+    font-size: 2vw;
+}
+
+.from:hover {
+    transform: translateY(-5px);
+}
+
+.from img {
+    max-width: 500px;
+    margin-bottom: 25px;
+}
+
+.from {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    border: 5px solid transparent;
+    /* Viền ban đầu trong suốt */
+    position: relative;
+    /* Để hiệu ứng hoạt động chính xác */
+    animation: chasing 2s infinite;
+    /* Thay đổi màu liên tục */
+}
+
+@keyframes chasing {
+    0% {
+        border-color: red;
+    }
+
+    20% {
+        border-color: orange;
+    }
+
+    40% {
+        border-color: yellow;
+    }
+
+    60% {
+        border-color: green;
+    }
+
+    80% {
+        border-color: blue;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
+
+.chasing-color {
+    display: inline-block;
+    animation: color-change 2s infinite;
+    /* Thay đổi màu liên tục */
+}
+
+@keyframes color-change {
+    0% {
+        color: red;
+    }
+
+    20% {
+        color: orange;
+    }
+
+    40% {
+        color: yellow;
+    }
+
+    60% {
+        color: green;
+    }
+
+    80% {
+        color: blue;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+/* Tạo độ trễ cho từng chữ để tạo hiệu ứng đuổi bắt */
+.chasing-color:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.chasing-color:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.chasing-color:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.chasing-color:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.chasing-color:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.chasing-color:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.chasing-color:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.chasing-color:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.chasing-color:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.chasing-color:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.chasing-color:nth-child(11) {
+    animation-delay: 1s;
+}
+
+.chasing-color:nth-child(12) {
+    animation-delay: 1.1s;
+}
+
+.chasing-color:nth-child(13) {
+    animation-delay: 1.2s;
+}
